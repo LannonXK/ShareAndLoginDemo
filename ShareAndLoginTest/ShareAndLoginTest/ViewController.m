@@ -18,8 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(50, 50, 100, 100);
+    [button setTitle:@"按钮" forState:UIControlStateNormal];
+    
     [self.view addSubview:button];
     
 }
